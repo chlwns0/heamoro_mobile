@@ -1,0 +1,213 @@
+header {
+  width: 100%;
+  height: 16.67vw;
+  background-color: #1c3b32;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  z-index: 999;
+}
+
+header .call {
+  width: 20%;
+  height: 8.19vw;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+header .call img {
+  width: 59%;
+}
+
+header .logo {
+  width: 100%;
+  /* border: 1px solid yellow; */
+  text-align: center;
+}
+
+header .logo img {
+  width: 44%;
+}
+
+/* mobile menu*/
+header .menu {
+  width: 20%;
+}
+
+header .menu #hamburger-menu {
+  cursor: pointer;
+  width: 16.67vw;
+  height: 16.67vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid red; */
+
+}
+
+header .menu #hamburger-menu .ham {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header .menu #hamburger-menu span {
+  width: 6.67vw;
+  height: 0.7vw;
+  background-color: #fff;
+  transition: .4s ease-in-out;
+  position: absolute;
+  border-radius: 3px;
+}
+
+/* 햄버거 닫혔을 때 */
+header .menu #hamburger-menu span:nth-child(1) {
+  top: 6.11vw;
+}
+
+header .menu #hamburger-menu span:nth-child(2) {
+  top: 8.19vw;
+}
+
+header .menu #hamburger-menu span:nth-child(3) {
+  top: 10.28vw;
+}
+
+/* 햄버거 열렸을 때 */
+header .menu #hamburger-menu.open span:nth-child(1) {
+  top: 8.19vw;
+  transform: rotate(135deg);
+}
+
+header .menu #hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+header .menu #hamburger-menu.open span:nth-child(3) {
+  top: 8.19vw;
+  transform: rotate(-135deg);
+}
+
+
+/* 메뉴 */
+#menu-container {
+  width: 100vw;
+  position: fixed;
+  z-index: 888;
+  padding-top: 16.67vw;
+}
+
+#menu-container .menu-list {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 메인 메뉴 */
+.accordion-toggle {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  line-height: 1.5;
+  color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.accordion-toggle h2 {
+  font-size: 5.56vw;
+  text-align: center;
+  display: none;
+}
+
+.accordion-toggle a {
+  position: relative;
+  padding: 3vw 3vw;
+
+  font-size: 4.44vw;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+
+  display: block;
+}
+
+.accordion-toggle a:hover {
+  color: #1c3b32;
+}
+
+/* 서브 메뉴 */
+.menu-submenu {
+  height: 100vh;
+  background-color: #e1e2e4;
+  padding-top: 6.94vw;
+}
+
+.menu-submenu li {
+  border-bottom: 1px solid #333;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 45.83vw;
+  background-color: #e8dfd6;
+  position: relative;
+  display: inline-block;
+
+  padding-bottom: 28.89vw;
+}
+
+footer .logo {
+  width: 20%;
+  margin: 5.69vw auto 4.58vw;
+  text-align: center;
+}
+
+footer .logo img {
+  width: 100%;
+}
+
+footer .devel {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .devel img {
+  width: 100%;
+}
+
+footer .ore {
+  width: 90%;
+  margin: 5.69vw auto 5.14vw;
+  line-height: 4.61vw;
+}
+
+footer .ore p {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 1.94vw;
+  color: #717171;
+}
+
+footer .copy {
+  width: 100%;
+  text-align: center;
+}
+
+footer .copy p {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 1.94vw;
+  color: #717171;
+}

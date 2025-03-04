@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sub {
+  width: 100%;
+}
+
+.sub .sub_top {
+  display: inline-block;
+  width: 100%;
+  margin-top: 16.67vw;
+}
+
+.sub .sub_top img {
+  width: 100%;
+}
+
+.sub .page {
+  width: 100%;
+  margin: 6.94vw auto 20.83vw;
+  position: relative;
+}
+
+.sub .page .inner {
+  width: 100%;
+}
+
+.sub .page .inner img {
+  width: 100%;
+}
+
+/* map link */
+.sub .page .inner .link_box {
+  width: 57%;
+  height: 104vw;
+  position: absolute;
+  bottom: -54%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.sub .page .inner .link_box div {
+  width: 100%;
+  height: 7vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub .page .inner .link_box div:last-child {}
+
+.sub .page .inner .link_box div a {
+  width: 47%;
+  height: 100%;
+  display: block;
+  background: skyblue;
+}

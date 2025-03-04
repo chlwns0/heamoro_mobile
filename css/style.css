@@ -1,0 +1,420 @@
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* sec01 main */
+.main {
+  width: 100%;
+  height: 152.78vw;
+  background: url(../img/mo_main_bg.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.main .title {
+  width: 100%;
+  padding-top: 28.75vw;
+  /* border: 1px solid red; */
+
+  text-align: center;
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.main .title h2 {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 6.94vw;
+  color: #1c3b32;
+
+  line-height: 8.61vw;
+}
+
+.main .title h2 span {
+  font-family: 'S-CoreDream-6Bold';
+}
+
+.main .open {
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+
+.main .open img {
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  margin: 0 9.72vw 6.94vw 0;
+}
+
+/* sec02 premium */
+.premium {
+  width: 100%;
+  height: 161.11vw;
+  background: url(../img/mo_pr_bg.jpg) no-repeat center center;
+  background-size: cover;
+
+  position: relative;
+}
+
+.premium .title {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 11.39vw;
+}
+
+.premium .title h2 img {
+  width: 8.5%;
+}
+
+.premium .title h2 {
+  font-family: 'Lato';
+  font-size: 7.64vw;
+  color: #1c3b32;
+}
+
+.premium .title p {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 2.50vw;
+  color: #1c3b32;
+  margin-top: 3.33vw;
+}
+
+.premium .title p span {
+  font-family: 'S-CoreDream-6Bold';
+}
+
+.premium .title p span strong {
+  font-style: italic;
+}
+
+.premium .inner {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-top: 7.86vw;
+}
+
+.premium .inner .desc {
+  width: 100%;
+  height: 19.44vw;
+  margin-left: 23.67vw;
+  /* border: 1px solid blueviolet; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.premium .inner .desc.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.premium .inner .desc img {
+  width: 9%;
+}
+
+.premium .inner .desc .txt {
+  width: 100%;
+  margin-left: 2.92vw;
+}
+
+.premium .inner .desc .txt h2 {
+  font-family: 'S-CoreDream-6Bold';
+  font-size: 3.33vw;
+  color: #1c3b32;
+
+  margin-bottom: 2.22vw;
+}
+
+.premium .inner .desc .txt p {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 2.22vw;
+  color: #1e1e1e;
+}
+
+.premium .inner .desc .no5 {
+  margin-top: 5.00vw;
+}
+
+.premium .inner .desc .txt .five {
+  line-height: 3.89vw;
+}
+
+/* sec03 location */
+.location {
+  width: 100%;
+  height: 111.11vw;
+  background: url(../img/mo_location_bg.jpg) no-repeat center center;
+  background-size: cover;
+
+  position: relative;
+
+  padding-bottom: 5.56vw;
+}
+
+.location .title {
+  width: 100%;
+  display: inline-block;
+  margin-top: 8.19vw;
+  text-align: center;
+}
+
+.location .title h2 {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 3.61vw;
+  color: #2a2a2a;
+}
+
+.location .title h2 span {
+  font-family: 'S-CoreDream-6Bold';
+  font-size: 5.28vw;
+  color: #1c3b32;
+
+  line-height: 11.11vw;
+}
+
+.location .slick {
+  width: 75%;
+  margin: 6.53vw auto 0;
+  /* border: 1px solid red; */
+
+  text-align: center;
+}
+
+.location .slick .slide {
+  opacity: 0;
+  transform: translateX(300px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.slick .slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.location .slick img {
+  width: 100%;
+}
+
+.location .slick h2 {
+  font-family: 'S-CoreDream-6Bold';
+  font-size: 3.61vw;
+  color: #1c3b32;
+  margin: 7.64vw auto 2.78vw;
+}
+
+.location .slick p {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 2.50vw;
+  color: #4f4f4f;
+  line-height: 3.89vw;
+}
+
+/* sec04 info */
+.info {
+  width: 100%;
+  height: 55.56vw;
+  background: url(../img/info_bg.jpg) no-repeat center center;
+  background-size: cover;
+
+  position: relative;
+
+  display: inline-block;
+}
+
+.info .main_img {
+  width: 84%;
+  margin: 7.36vw auto 6.39vw;
+  text-align: center;
+  /* border: 1px solid red; */
+
+  position: relative;
+}
+
+.info .main_img {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.info .main_img.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.info .txt {
+  opacity: 0;
+  transform: translateX(300px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.info .txt.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.info .main_img img {
+  width: 100%;
+}
+
+.info .main_img .title {
+  width: 100%;
+
+  position: absolute;
+  top: 11.67vw;
+}
+
+.info .main_img .title h2 {
+  font-family: 'S-CoreDream-6Bold';
+  font-size: 2.78vw;
+  color: #1c3b32;
+}
+
+.info .main_img .title p {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 2.22vw;
+  color: #1c3b32;
+  margin-top: 2.22vw;
+}
+
+.info .txt {
+  width: 100%;
+  text-align: center;
+}
+
+.info .txt p {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 2.22vw;
+  color: #fff;
+  line-height: 3.78vw;
+}
+
+/* sec05 contact */
+.contact {
+  width: 100%;
+  height: 111.11vw;
+  background: url(../img/contact_bg.jpg) no-repeat center center;
+  background-size: cover;
+
+  position: relative;
+  padding-bottom: 2.78vw;
+}
+
+.contact .title {
+  width: 100%;
+  display: inline-block;
+  margin-top: 10.97vw;
+  text-align: center;
+}
+
+.contact .title h2 {
+  font-family: 'Lato';
+  font-size: 5.56vw;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact .inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact .inner {
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 4s ease;
+}
+
+.contact .inner.active {
+  opacity: 1;
+}
+
+.contact .inner .map {
+  width: 68%;
+  margin: 8.19vw auto 5.83vw;
+  text-align: center;
+}
+
+.contact .inner .map img {
+  width: 100%;
+}
+
+.contact .inner .txt {
+  width: 67%;
+  margin: 0 auto;
+  text-align: left;
+  /* border: 1px solid red; */
+}
+
+.contact .inner .txt h2 {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 2.78vw;
+  color: #fff;
+}
+
+.contact .inner .txt .first {
+  font-family: 'S-CoreDream-6Bold';
+  letter-spacing: 1.81vw;
+}
+
+.contact .inner .txt strong {
+  font-family: 'S-CoreDream-6Bold';
+}
+
+.contact .inner .txt span {
+  font-family: 'S-CoreDream-6Bold';
+}
+
+.contact .inner .num {
+  width: 100%;
+  text-align: center;
+
+  margin: 7.78vw auto 6.81vw;
+}
+
+.contact .inner .num h2 {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 2.78vw;
+  color: #fff;
+}
+
+.contact .inner .num h2 span {
+  font-family: 'S-CoreDream-6Bold';
+}
+
+.contact .inner .bogi {
+  width: 27%;
+  margin: 0 auto;
+}
+
+.contact .inner .bogi a {}
+
+.contact .inner .bogi a img {
+  width: 100%;
+}
